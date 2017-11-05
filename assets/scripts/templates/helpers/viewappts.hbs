@@ -1,0 +1,23 @@
+<table>
+  <tr>
+    <th>Appointment ID
+    </th>
+    <th>Appointment Name
+    </th>
+    <th>Appointment Time
+    </th>
+    <th>Phone Number
+    </th>
+    <th>Reminder
+    </th>
+  </tr>
+{{#each appointments as |appointment|}}
+<tr data-id="{{appointment.id}}">
+  <td>{{appointment.id}}</td>
+  <td>{{appointment.name}}</td>
+  <td>{{appointment.time}}</td>
+  <td>{{appointment.phone_number}}</td>
+  <td>{{appointment.reminder}}
+</tr>
+{{/each}}
+</table>
