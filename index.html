@@ -56,7 +56,7 @@
       <legend>Create an Appointment</legend>
   <fieldset>
     <input type="text" name="appointment[name]" placeholder="appointment name">
-    <input type="text" name="appointment[time]" placeholder="appointment time">
+    <input type="datetime-local" name="appointment[time]" placeholder="appointment time">
     <input type="text" name="appointment[phone_number]" placeholder="phone number to alert">
     <input type="text" name="appointment[reminder]" placeholder="body">
     <input type="submit" name="submit" value="Submit">
@@ -67,7 +67,7 @@
     <legend>Edit an appointment</legend>
 <input type="number" name="appointment[id]" placeholder="appointment ID">
 <input type="text" name="appointment[name]" placeholder="appointment name">
-<input type="text" name="appointment[time]" placeholder="appointment time">
+<input type="datetime-local" name="appointment[time]" placeholder="appointment time">
 <input type="text" name="appointment[phone_number]" placeholder="phone number to alert">
 <input type="submit" name="submit" value="Update an appointment">
   </fieldset>
