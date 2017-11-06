@@ -22,6 +22,8 @@ const onUpdateAppointment = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
   const id = data.appointment.id
+  console.log('scope check for data: ', data)
+  console.log('scope check id is ', id)
   api.update(id, data)
     .then(ui.updateSuccess)
     .catch(ui.fail)

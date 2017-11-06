@@ -12,7 +12,7 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <h1>Add a list of reminders</h1>
+      <h1>Call me, Baby</h1>
       <form id="sign-up" class="clearform">
         <fieldset>
           <legend>Sign Up!</legend>
@@ -58,8 +58,10 @@
     <input type="text" name="appointment[name]" placeholder="appointment name">
     <input type="datetime-local" name="appointment[time]" placeholder="appointment time">
     <input type="text" name="appointment[phone_number]" placeholder="phone number to alert">
-    <input type="text" name="appointment[reminder]" placeholder="body">
+    <input type="text" name="appointment[reminder]" placeholder="text message body">
     <input type="submit" name="submit" value="Submit">
+    <!-- <button class="btn btn-info" id="edit"><span class="glyphicon glyphicon-edit"></span> edit</button>
+    <button class="btn btn-success"id="save"><span class="glyphicon glyphicon-save"></span> save</button> -->
   </fieldset>
 </form>
 <form id="edit-appts" class="after clearform">
@@ -69,6 +71,7 @@
 <input type="text" name="appointment[name]" placeholder="appointment name">
 <input type="datetime-local" name="appointment[time]" placeholder="appointment time">
 <input type="text" name="appointment[phone_number]" placeholder="phone number to alert">
+<input type="text" name="appointment[reminder]" placeholder="body">
 <input type="submit" name="submit" value="Update an appointment">
   </fieldset>
 </form>

@@ -13,11 +13,13 @@
   </tr>
 {{#each appointments as |appointment|}}
 <tr data-id="{{appointment.id}}">
-  <td>{{appointment.id}}</td>
-  <td>{{appointment.name}}</td>
-  <td>{{appointment.time}}</td>
-  <td>{{appointment.phone_number}}</td>
-  <td>{{appointment.reminder}}
-</tr>
+  <td id="appt-id">{{appointment.id}}</td>
+  <td id="appt-name">{{appointment.name}}</td>
+  <td id="appt-time">{{appointment.time}}</td>
+  <td id="appt-num">{{appointment.phone_number}}</td>
+  <td id="appt-reminder">{{appointment.reminder}}
+    {{!-- <button data-id="{{appointment.id}}" id="inline-edit" value="edit">Edit</button>
+    <button data-id="{{appointment.id}}" class="inline-delete" value="delete">Delete</button>
+</tr> --}}
 {{/each}}
 </table>
