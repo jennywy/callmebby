@@ -1,8 +1,26 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+legend {
+  color: #FF495C;
+}
+
+table {
+  margin: 10px;
+}
 
 #appointments {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-collapse: collapse;
     width: 100%;
 }

@@ -17,6 +17,7 @@ const getAppointmentsSuccess = function (data) {
 
 const onInlineEdit = (event) => {
   event.preventDefault()
+  $('.inline-edit').hide()
   const id = $(event.target).attr('data-id')
   //
   const desc = $(event.target).parent().siblings()[0]
@@ -31,8 +32,8 @@ const onInlineEdit = (event) => {
   const reminderBody = $(event.target).parent().siblings()[3]
   reminderBody.contentEditable = true
   //
-  $(event.target).parent().append('<button class="edit-confirm">Confirm Edit</button>')
-  $(event.target).parent().append('<button class="edit-cancel">Cancel Edit</button>')
+  $(event.target).parent().append('<button class="edit-confirm btn btn-success">Confirm Edit</button>')
+  $(event.target).parent().append('<button class="edit-cancel btn btn-warning">Cancel Edit</button>')
   //
   $('.edit-cancel').on('click', function (event) {
     $('.edit-cancel').hide()
