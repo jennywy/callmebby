@@ -7,9 +7,9 @@ const getAppointmentsSuccess = function (data) {
   if (data.appointments.length === 0) {
     $('#content').text('You have no appointments. Click below to create an appointment')
   } else {
+    $('#list-appts').hide()
     const showAppointmentsHTML = showAppointmentsTemplate({appointments: data.appointments})
     $('#content').append(showAppointmentsHTML)
-    $('#message').text('Listed!')
     $('.inline-edit').on('click', onInlineEdit)
     $('.inline-delete').on('click', onInlineDelete)
   }
@@ -84,20 +84,30 @@ const addSuccess = function (data) {
 const deleteSuccess = function (data) {
   $('.clearform').trigger('reset')
   $('#content').text(null)
-  $('#message').text('Deleted!')
+  $('#message').text('Deleted!').fadeIn().delay(4000).fadeOut()
   $('#delete-appts').trigger('reset')
+  api.index()
+    .then((data) => {
+      getAppointmentsSuccess(data)
+    })
+    .catch(fail)
 }
 
 const updateSuccess = function (data) {
   $('.clearform').trigger('reset')
   $('#content').text(null)
   $('#edit-appts').trigger('reset')
-  $('#message').text('Updated!')
+  $('#message').text('Updated!').fadeIn().delay(4000).fadeOut()
+  api.index()
+    .then((data) => {
+      getAppointmentsSuccess(data)
+    })
+    .catch(fail)
 }
 
 const fail = function () {
   $('#content').text(null)
-  $('#message').text('Something went wrong, please kindly try again!')
+  $('#message').text('Something went wrong, please kindly try again!').fadeIn().delay(4000).fadeOut()
 }
 
 module.exports = {
