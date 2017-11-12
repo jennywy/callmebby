@@ -12,7 +12,6 @@ const onGetAppointments = (event) => {
 const onAddAppointment = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
-  console.log('before data is ', data)
   api.create(data)
     .then(ui.addSuccess)
     .catch(ui.fail)
@@ -22,8 +21,6 @@ const onUpdateAppointment = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
   const id = data.appointment.id
-  console.log('scope check for data: ', data)
-  console.log('scope check id is ', id)
   api.update(id, data)
     .then(ui.updateSuccess)
     .catch(ui.fail)
