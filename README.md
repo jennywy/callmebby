@@ -16,7 +16,7 @@ https://github.com/jennywy/callmebby
 https://jennywy.github.io/callmebby/
 
 ## Wireframe
-![Wireframe](https://wireframe.cc/oekaUJ)
+![Wireframe](https://i.imgur.com/aJX5mSK.png)
 
 ## Project
 ![Call Me Baby](https://i.imgur.com/o6aMh3r.png)
@@ -37,12 +37,12 @@ https://jennywy.github.io/callmebby/
 - CSS
 
 ## Project Planning Process
-I had pneumonia and spent most of my time working on my back end that I had neglected the front end!
+I had pneumonia and spent most of my time working on my back end that I had neglected the front end! I really wanted to do this project in Ember, but I didn't feel confident with the framework after a week of mostly self-directed learning while I was ill on top of doing a kind of tricky third party API integration with Active Jobs so I scrapped the idea and used the browser template that GA built for us kind of as a crutch. 
 
 I identified lots of ways I want to grow in the future:
 - I definitely have learned to appreciate the Agile development process to making sure I'm on time, working on the right things at the right time, and not spending too much time on the wrong things because I did everything wrong for this capstone project!
 - Planning and design are not at all my strong suits and I'd like to grow in these areas very much! I don't have good intuition for how to come up with a great layout for a website that does X, Y, and Z and how to represent that data in the most inuitive, and aesthetically pleasing way, but I want to learn how to plan better and make good wireframes, and make my websites look like my wireframes!
-- My commit history is a mess!
+- My commit history is a mess! I definitely worked on the master branch too often and not on a feature to development to master like I should have.
 
 ## Unsolved Problems on the Front End
 - Design, accessibility, UX/UI: My website doesn't look anything like I had wireframed! I find wireframing and styling really challenging. I don't yet have a great understanding or intuition of good design or great UX/UI. CMB doesn't look very good, and I'd like to take more time to give it a real nav bar or menu and give it a better layout. My forms aren't very clear about what they do, and accessibility is definitely a problem. This is definitely an area I'd like to take time to grow in.
