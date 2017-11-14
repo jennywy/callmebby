@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Appointment Reminders</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body class="container-fluid">
+      <h1>Call me, Baby</h1>
+      <form id="sign-up" class="clearform form-inline">
+        <fieldset>
+          <legend>Sign Up!</legend>
+          <input class="form-control" name="credentials[name]" type="text" placeholder="Username">
+          <input class="form-control" name="credentials[email]" type="text" placeholder="Email address">
+          <input class="form-control" name="credentials[password]" type="password" placeholder="Password">
+          <input class="form-control" name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
+          <input class="form-control btn btn-primary" type="submit" name="submit" value="Sign up!">
+        </fieldset>
+      </form>
+      <form id="sign-in" class="clearform form-inline">
+        <fieldset>
+          <legend>Sign In!</legend>
+          <input class="form-control" name="credentials[email]" type="text" placeholder="Email">
+          <input class="form-control" name="credentials[password]" type="password" placeholder="Password">
+          <input class="form-control btn btn-primary" type="submit" name="submit" value="Sign in!">
+        </fieldset>
+      </form>
+      <form id="sign-out" class="clearform form-inline">
+        <fieldset>
+          <legend>Sign Out</legend>
+          <input class="form-control btn btn-primary" type="submit" name="submit" value="Sign out">
+        </fieldset>
+      </form>
+      <form id="change-password" class="clearform form-inline">
+        <fieldset>
+          <legend>Change Password</legend>
+          <input class="form-control" type="password" name="passwords[old]" id="change-password-old" placeholder="Old Password">
+          <input class="form-control" type="password" name="passwords[new]" id="change-password-new" placeholder="New Password">
+          <input class="form-control btn btn-primary" type="submit" name="submit" value="Change Password!">
+        </fieldset>
+      </form>
+      <p id="message"></p>
+<div id="content" class="content">
+</div>
+<form id="list-appts" class="after clearform form-inline">
+  <legend>See Your Appointments</legend>
+      <input class="form-control btn btn-primary" type="submit" name="submit" value="Submit">
+    </form>
+    <form id="add-appts" class="after clearform form-inline">
+      <legend>Create an Appointment</legend>
+  <fieldset>
+    <input class="form-control" type="text" name="appointment[name]" placeholder="Description">
+    <input class="form-control" type="datetime-local" name="appointment[time]" placeholder="Time">
+    <input class="form-control" type="text" name="appointment[phone_number]" value="6179998130">
+    <input class="form-control" type="text" name="appointment[reminder]" placeholder="SMS body">
+    <input class="form-control btn btn-primary" type="submit" name="submit" value="Submit">
+    <!-- <button class="btn btn-info" id="edit"><span class="glyphicon glyphicon-edit"></span> edit</button>
+    <button class="btn btn-success"id="save"><span class="glyphicon glyphicon-save"></span> save</button> -->
+  </fieldset>
+</form>
+<!-- <form id="edit-appts" class="after clearform"> -->
+  <!-- <fieldset>
+    <legend>Edit an appointment</legend>
+<input type="number" name="appointment[id]" placeholder="appointment ID">
+<input type="text" name="appointment[name]" placeholder="appointment name">
+<input type="datetime-local" name="appointment[time]" placeholder="appointment time">
+<input type="text" name="appointment[phone_number]" placeholder="phone number to alert">
+<input type="text" name="appointment[reminder]" placeholder="body">
+<input type="submit" name="submit" value="Update an appointment">
+  </fieldset>
+</form> -->
+<!-- <form id="delete-appts" class="after clearform">
+  <legend>Delete an appointment</legend>
+  <input type="number" name="appointment[id]" placeholder="appointment ID">
+  <input type="submit" name="submit" value="Submit">
+</form> -->
+    </body>
+</html>
