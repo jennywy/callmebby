@@ -78,8 +78,13 @@ const onInlineDelete = function (event) {
 const addSuccess = function (data) {
   $('#content').text(null)
   $('.clearform').trigger('reset')
-  const showAppointmentsHTML = showAppointmentsTemplate({appointments: data})
-  $('#content').append(showAppointmentsHTML)
+  api.index()
+    .then((data) => {
+      getAppointmentsSuccess(data)
+    })
+    .catch(fail)
+  // const showAppointmentsHTML = showAppointmentsTemplate({appointments: data})
+  // $('#content').append(showAppointmentsHTML)
 }
 
 const deleteSuccess = function (data) {
